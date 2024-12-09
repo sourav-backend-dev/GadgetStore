@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom colors */
+:root {
+  --primary-color: #007bff; /* Blue */
+  --secondary-color: #20c997; /* Teal */
+  --accent-color: #f8f9fa; /* Light Gray */
+  --text-color: #343a40; /* Dark Gray for text */
+}
+
+/* Customize button colors */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker Blue on Hover */
+  border-color: #004085;
+}
+
+.btn-light {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+}
+
+.btn-light:hover {
+  background-color: #1f8c7b; /* Darker Teal on Hover */
+}
+
+/* Customize headings */
+h2, h3, h4 {
+  color: var(--primary-color);
+}
+
+/* Text Colors */
+.text-dark {
+  color: var(--text-color);
+}
+
+/* Background Colors */
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-light {
+  background-color: var(--accent-color) !important;
+}
+
+
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  margin: 10px;
+}
+
+.testimonial-card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .product-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.testimonial-card .review {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.5;
+}
